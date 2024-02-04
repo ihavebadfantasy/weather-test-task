@@ -1,4 +1,4 @@
-version: '3.5'
+version: '3.7'
 
 services:
   db:
@@ -25,7 +25,7 @@ services:
       - db
     volumes:
       - ./src:/app/src
-    command: ["bash", "/app/wait-for-db.sh", "db:5432", "--timeout=60", "--", "npm", "start"]
+    command: ["wait-for-it", "db:5432", "--", "npm", "start"]
 
   pgadmin:
     image: dpage/pgadmin4
