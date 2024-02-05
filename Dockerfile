@@ -12,6 +12,6 @@ COPY . .
 
 RUN npm run build
 
-CMD ["wait-for-it", "db:5432", "--timeout=60", "--", "npm", "start"]
+CMD ["npm", "run", "start"]
 
 

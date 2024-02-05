@@ -1,4 +1,4 @@
-version: '3.8'
+version: '3.9'
 
 services:
   db:
@@ -19,13 +19,11 @@ services:
     container_name: weather-app
     environment:
       - PORT=${PORT}
+      - DATABASE_URL=postgres://user:${DB_PASSWORD}@db:5432/${DB_NAME}
     ports:
       - '3000:3000'
     depends_on:
       - db
-    volumes:
-      - ./src:/app/src
-    command: ["wait-for-it", "db:5432", "--timeout=60", "--", "npm", "start"]
 
   pgadmin:
     image: dpage/pgadmin4
