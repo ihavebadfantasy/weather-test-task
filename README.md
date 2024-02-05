@@ -46,5 +46,5 @@ Swagger documentation is available at: [http://localhost:3000](http://localhost:
 
 ## Notes:
 
-- The application uses a PostgreSQL database to store weather data. Data is stored in JSON format.
+- The application uses a PostgreSQL database to store weather data. Data is stored in JSON format. On the first start the error may occur from TypeORM module of Nest.js app, saying unable to connect to database. It occurs because database is being created and initialized at the first time. App will automatically reconnect when database is ready and will run successfully. 
 - Unit tests are optional and not included in this example.
