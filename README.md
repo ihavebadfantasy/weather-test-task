@@ -14,7 +14,7 @@ This project fetches weather data from [OpenWeatherMap API](https://openweatherm
 
 ## Requirements
 
-- Docker should be installed on your machine.
+- Docker should be installed on your machine and running.
 
 ## Running the Project
 
@@ -24,7 +24,7 @@ This project fetches weather data from [OpenWeatherMap API](https://openweatherm
    cd weather-app
    ```
 
-2. **Copy .env file from .env.example and complete the fields with correspondent values:**
+2. **Copy the .env file from the .env.example and complete the fields with correspondent values:**
    ```bash
    cp .env.example .env
    ```
@@ -42,7 +42,7 @@ This project fetches weather data from [OpenWeatherMap API](https://openweatherm
 
 ## API Documentation:
 
-Swagger documentation is available at: [http://localhost:3000](http://localhost:3000)
+Swagger documentation is available at [http://localhost:3000](http://localhost:3000)
 
 ## Notes:
 
